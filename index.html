@@ -1,409 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Damar Wahyu Putra - UI/UX & Web Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="nav-container">
-      <div class="logo">Portofolio Damar WP</div>
-      <nav>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#organizations" class="nav-link">Organizations</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav-controls">
-        <button class="theme-toggle" id="themeToggle">
-          <i class="fas fa-moon"></i>
-        </button>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damar Wahyu Putra - UI/UX & Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo">Portofolio</div>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#organizations" class="nav-link">Organizations</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section" id="about">
+        <div class="hero-content fade-in">
+          <div class="hero-text">
+            <h1>
+              Hi, I'm
+              <span
+                style="
+                  background: var(--gradient);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+                >Damar Wahyu P</span
+              >
+            </h1>
+            <p class="subtitle">UI/UX Designer & Frontend Developer</p>
+            <p>
+              Saya adalah mahasiswa dengan passion tinggi dalam UI/UX Design dan
+              Frontend Developer. Fokus saya adalah menciptakan pengalaman
+              digital yang tidak hanya fungsional, tetapi juga estetik dan
+              menyenangkan untuk digunakan.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                View My Work
+              </a>
+              <a
+                href="Resume-Damar-Wahyu-Putra.pdf"
+                download
+                class="btn btn-secondary"
+              >
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+          <div class="hero-image floating">
+            <img
+              src="./img/WhatsApp Image 2025-06-10 at 14.45.46_c012ae3e.jpg"
+              alt="Damar Wahyu Putra"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section fade-in" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+          <div class="card experience-item">
+            <img src="./img/IMG_3833.jpg" alt="Stock-Summit UI Event" />
+            <div>
+              <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+                Staff Event Stock-Summit UI
+              </h3>
+              <p style="color: var(--text-muted-light); margin-bottom: 1rem">
+                2024
+              </p>
+              <p>
+                Berperan sebagai staff divisi event dan MC pada acara Seminar
+                Stock-Summit UI. Mengelola koordinasi acara dan memfasilitasi
+                jalannya seminar dengan audience yang besar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section fade-in" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <div class="projects-grid" id="projectsGrid">
+              <!-- Project 1 -->
+              <div class="card-inline">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="./img/Screenshot 2025-06-11 110328.png"
+                      alt="Website Responsive Workshop"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Website Responsive Workshop</h3>
+                    <p>
+                      Mengembangkan website interaktif dan responsive untuk
+                      booking dan pembelian perlengkapan motor. Dibangun dengan
+                      HTML, CSS, dan JavaScript dengan fokus pada user
+                      experience yang optimal.
+                    </p>
+                    <div class="project-gallery">
+                      <img
+                        src="./img/Screenshot 2025-06-11 110826.png"
+                        alt="Screenshot 1"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/Screenshot 2025-06-11 110850.png"
+                        alt="Screenshot 2"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/Screenshot 2025-06-11 110859.png"
+                        alt="Screenshot 3"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/Screenshot 2025-06-11 110909.png"
+                        alt="Screenshot 4"
+                        onclick="openModal(this.src)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="card-inline">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="./img/project2_img/Screenshot 2025-06-17 193256.png"
+                      alt="BM FKKP"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Website BM FKKP Forum Komunitas</h3>
+                    <p>
+                      Terdapat isi seperti landing page, yang di mana memiliki
+                      about me, struktur, kegiatan, contact, footer.
+                    </p>
+                    <div class="project-gallery">
+                      <img
+                        src="./img/project2_img/Screenshot 2025-06-17 193312.png"
+                        alt="Screenshot 1"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project2_img/Screenshot 2025-06-17 193321.png"
+                        alt="Screenshot 2"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project2_img/Screenshot 2025-06-17 193332.png"
+                        alt="Screenshot 3"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project2_img/Screenshot 2025-06-17 193341.png"
+                        alt="Screenshot 4"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project2_img/Screenshot 2025-06-17 193348.png"
+                        alt="Screenshot 5"
+                        onclick="openModal(this.src)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="card-inline">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="./img/project3_img/slide 1.png"
+                      alt="UI/UX Workshop Mobile App"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>UI/UX Workshop Mobile App</h3>
+                    <p>
+                      Merancang aplikasi mobile untuk peminjaman dan pencarian
+                      buku menggunakan Figma. Membuat wireframe, prototype
+                      interaktif, dan user flow yang komprehensif.
+                    </p>
+                    <div class="project-gallery">
+                      <img
+                        src="./img/project3_img/homescreen.png"
+                        alt="Screenshot 1"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/profile.png"
+                        alt="Screenshot 2"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/notif,dll.png"
+                        alt="Screenshot 3"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/profile.png"
+                        alt="Screenshot 4"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/bank.png"
+                        alt="Screenshot 5"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/top-up.png"
+                        alt="Screenshot 6"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/detail-page.png"
+                        alt="Screenshot 7"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/cart.png"
+                        alt="Screenshot 8"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/checkout.png"
+                        alt="Screenshot 9"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project3_img/history.png"
+                        alt="Screenshot 10"
+                        onclick="openModal(this.src)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4 -->
+              <div class="card-inline">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="./img/project4_img/Screenshot 2025-07-05 231124.png"
+                      alt="Jus Kabita"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Jus Kabita</h3>
+                    <p>
+                      Terdapat isi seperti landing page, yang di mana memiliki
+                      Title, menu Jus, contact alamat dan jam operasional. Serta
+                      responsive mobile, tab, laptop, pc.
+                    </p>
+                    <div class="project-gallery">
+                      <img
+                        src="./img/project4_img/Screenshot 2025-07-05 231124.png"
+                        alt="Screenshot 1"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project4_img/Screenshot 2025-07-05 231133.png"
+                        alt="Screenshot 2"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project4_img/Screenshot 2025-07-05 231146.png"
+                        alt="Screenshot 3"
+                        onclick="openModal(this.src)"
+                      />
+                      <img
+                        src="./img/project4_img/Screenshot 2025-07-05 231154.png"
+                        alt="Screenshot 4"
+                        onclick="openModal(this.src)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="carousel-controls">
+            <div class="carousel-nav">
+              <button class="nav-btn" id="prevBtn" onclick="prevProject()">
+                ←
+              </button>
+              <button class="nav-btn" id="nextBtn" onclick="nextProject()">
+                →
+              </button>
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="close" aria-label="Tutup">&times;</button>
+        <img src="" alt="" />
+      </div>
+
+      <!-- Skills Section -->
+      <section class="section fade-in" id="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="card">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <div>
+                <h4>UI/UX Design</h4>
+                <p>Figma, Prototyping</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <h4>Front-End Development</h4>
+                <p>HTML, CSS, JavaScript, Responsive Design</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div>
+                <h4>Problem Solving</h4>
+                <p>Creative Solutions, Critical Thinking</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <h4>Teamwork</h4>
+                <p>Collaboration, Communication, Leadership</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Organizations Section -->
+      <section class="section fade-in" id="organizations">
+        <h2 class="section-title">Organizations & Activities</h2>
+        <div class="org-grid">
+          <div class="card org-item">
+            <img
+              src="./img/oragnization/indorelawan/WhatsApp Image 2025-07-04 at 14.34.22_76452a2d.jpg"
+              alt="Indorelawan Activity"
+            />
+            <div>
+              <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+                Ketua Grup Indorelawan
+              </h3>
+              <p style="color: var(--secondary); margin-bottom: 1rem">
+                Generasi Bebas Plastik
+              </p>
+              <p>
+                Memimpin kampanye edukasi lingkungan dan mengorganisasi aksi
+                bersih-bersih di berbagai lokasi. Menginisiasi program awareness
+                tentang pengurangan penggunaan plastik di komunitas.
+              </p>
+            </div>
+          </div>
+
+          <div class="card org-item">
+            <img
+              src="./img/oragnization/novoclub/WhatsApp Image 2025-07-04 at 14.34.23_1a9c2079.jpg  "
+              alt="Novo Club Activity"
+            />
+            <div>
+              <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+                Member Novo Club
+              </h3>
+              <p style="color: var(--secondary); margin-bottom: 1rem">
+                Technology Community
+              </p>
+              <p>
+                Aktif berpartisipasi dalam diskusi teknologi dan pengembangan
+                diri. Membantu mengorganisasi event komunitas digital dan
+                workshop pengembangan skill.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <h2 style="margin-bottom: 1rem">Let's Connect!</h2>
+      <p>Ready to create something amazing together?</p>
+      <div class="contact-links">
+        <a href="mailto:damarwahyup160@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          damarwahyup160@gmail.com
+        </a>
+        <a
+          href="https://linkedin.com/in/damarwahyuputra"
+          class="contact-link"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+        <a
+          href="https://instagram.com/d.ptra._"
+          class="contact-link"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+          @d.ptra._
+        </a>
+      </div>
+      <p style="margin-top: 2rem; color: var(--text-muted-light)">
+        © 2025 Damar Wahyu Putra. Made with ❤️ and lots of ☕
+      </p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero section" id="about">
-      <div class="hero-content fade-in">
-        <div class="hero-text">
-          <h1>Hi, I'm <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Damar Wahyu P</span></h1>
-          <p class="subtitle">UI/UX Designer & Frontend Developer</p>
-          <p>Saya adalah mahasiswa dengan passion tinggi dalam UI/UX Design dan Frontend Developer. Fokus saya adalah menciptakan pengalaman digital yang tidak hanya fungsional, tetapi juga estetik dan menyenangkan untuk digunakan.</p>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn btn-primary">
-              <i class="fas fa-rocket"></i>
-              View My Work
-            </a>
-            <a href="Resume-Damar-Wahyu-Putra.pdf" download class="btn btn-secondary">
-              <i class="fas fa-download"></i>
-              Download CV
-            </a>
-          </div>
-        </div>
-        <div class="hero-image floating">
-          <img src="./img/WhatsApp Image 2025-06-10 at 14.45.46_c012ae3e.jpg" alt="Damar Wahyu Putra" />
-        </div>
-      </div>
-    </section>
+    <script>
+      // Mobile Navigation Toggle
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
 
-    <!-- Experience Section -->
-    <section class="section fade-in" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="experience-grid">
-        <div class="card experience-item">
-          <img src="./img/IMG_3833.jpg" alt="Stock-Summit UI Event">
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Staff Event Stock-Summit UI</h3>
-            <p style="color: var(--text-muted-light); margin-bottom: 1rem;">2024</p>
-            <p>Berperan sebagai staff divisi event dan MC pada acara Seminar Stock-Summit UI. Mengelola koordinasi acara dan memfasilitasi jalannya seminar dengan audience yang besar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section fade-in" id="projects">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="card project-card">
-          <div class="project-image">
-            <img src="./img/Screenshot 2025-06-11 110328.png" alt="Website Responsive Workshop">
-          </div>
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">Website Responsive Workshop</h3>
-            <p style="margin-bottom: 1rem;">Mengembangkan website interaktif dan responsive untuk booking dan pembelian perlengkapan motor. Dibangun dengan HTML, CSS, dan JavaScript dengan fokus pada user experience yang optimal.</p>
-            <div class="project-gallery">
-              <img src="./img/Screenshot 2025-06-11 110826.png" alt="Screenshot 1" onclick="openModal(this.src)">
-              <img src="./img/Screenshot 2025-06-11 110850.png" alt="Screenshot 2" onclick="openModal(this.src)">
-              <img src="./img/Screenshot 2025-06-11 110859.png" alt="Screenshot 3" onclick="openModal(this.src)">
-              <img src="./img/Screenshot 2025-06-11 110909.png" alt="Screenshot 4" onclick="openModal(this.src)">
-            </div>
-          </div>
-        </div>
-
-        <div class="card project-card">
-          <div class="project-image">
-            <img src="./img/project2_img/Screenshot 2025-06-17 193256.png" alt="BM FKKP">
-          </div>
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">Website BM FKKP Forum Komunitas</h3>
-            <p style="margin-bottom: 1rem;">Terdapat isi seperti landing page, yang di mana memiliki about me, struktur, kegiatan, contact, footer.</p>
-            <div class="project-gallery">
-              <img src="./img/project2_img/Screenshot 2025-06-17 193312.png" alt="Screenshot 1" onclick="openModal(this.src)">
-              <img src="./img/project2_img/Screenshot 2025-06-17 193321.png" alt="Screenshot 2" onclick="openModal(this.src)">
-              <img src="./img/project2_img/Screenshot 2025-06-17 193332.png" alt="Screenshot 3" onclick="openModal(this.src)">
-              <img src="./img/project2_img/Screenshot 2025-06-17 193341.png" alt="Screenshot 4" onclick="openModal(this.src)">
-              <img src="./img/project2_img/Screenshot 2025-06-17 193348.png" alt="Screenshot 4" onclick="openModal(this.src)">
-            </div>
-          </div>
-        </div>
-        
-        <div class="card project-card">
-          <div class="project-image">
-            <img src="./img/project3_img/slide 1.png" alt="UI/UX Workshop Mobile App">
-          </div>
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">UI/UX Workshop Mobile App</h3>
-            <p style="margin-bottom: 1rem;">Merancang aplikasi mobile untuk peminjaman dan pencarian buku menggunakan Figma. Membuat wireframe, prototype interaktif, dan user flow yang komprehensif.</p>
-            <div class="project-gallery">
-              <img src="./img/project3_img/homescreen.png" alt="Screenshot 1" onclick="openModal(this.src)">
-              <img src="./img/project3_img/profile.png" alt="Screenshot 2" onclick="openModal(this.src)">
-              <img src="./img/project3_img/notif,dll.png" alt="Screenshot 3" onclick="openModal(this.src)">
-              <img src="./img/project3_img/profile.png" alt="Screenshot 4" onclick="openModal(this.src)">
-              <img src="./img/project3_img/bank.png" alt="Screenshot 5" onclick="openModal(this.src)">
-              <img src="./img/project3_img/top-up.png" alt="Screenshot 6" onclick="openModal(this.src)">
-              <img src="./img/project3_img/detail-page.png" alt="Screenshot 7" onclick="openModal(this.src)">
-              <img src="./img/project3_img/cart.png" alt="Screenshot 8" onclick="openModal(this.src)">
-              <img src="./img/project3_img/checkout.png" alt="Screenshot 9" onclick="openModal(this.src)">
-              <img src="./img/project3_img/history.png" alt="Screenshot 10" onclick="openModal(this.src)">
-            </div>
-          </div>
-        </div>
-
-        <div class="card project-card">
-          <div class="project-image">
-            <img src="./img/project4_img/Screenshot 2025-07-05 231124.png" alt="Jus Kabita">
-          </div>
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">Jus Kabita</h3>
-            <p style="margin-bottom: 1rem;">Terdapat isi seperti landing page, yang di mana memiliki Title, menu Jus, contact alamat dan jam operasional. Serta responsive mobile, tab, laptop, pc.</p>
-            <div class="project-gallery">
-              <img src="./img/project4_img/Screenshot 2025-07-05 231124.png" alt="Screenshot 1" onclick="openModal(this.src)">
-              <img src="./img/project4_img/Screenshot 2025-07-05 231133.png" alt="Screenshot 2" onclick="openModal(this.src)">
-              <img src="./img/project4_img/Screenshot 2025-07-05 231146.png" alt="Screenshot 3" onclick="openModal(this.src)">
-              <img src="./img/project4_img/Screenshot 2025-07-05 231154.png" alt="Screenshot 4" onclick="openModal(this.src)">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section fade-in" id="skills">
-      <h2 class="section-title">Skills & Expertise</h2>
-      <div class="card">
-        <div class="skills-grid">
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="fab fa-figma"></i>
-            </div>
-            <div>
-              <h4>UI/UX Design</h4>
-              <p>Figma, Prototyping</p>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <div>
-              <h4>Front-End Development</h4>
-              <p>HTML, CSS, JavaScript, Responsive Design</p>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <div>
-              <h4>Problem Solving</h4>
-              <p>Creative Solutions, Critical Thinking</p>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div>
-              <h4>Teamwork</h4>
-              <p>Collaboration, Communication, Leadership</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Organizations Section -->
-    <section class="section fade-in" id="organizations">
-      <h2 class="section-title">Organizations & Activities</h2>
-      <div class="org-grid">
-        <div class="card org-item">
-          <img src="./img/oragnization/indorelawan/WhatsApp Image 2025-07-04 at 14.34.22_76452a2d.jpg" alt="Indorelawan Activity">
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Ketua Grup Indorelawan</h3>
-            <p style="color: var(--secondary); margin-bottom: 1rem;">Generasi Bebas Plastik</p>
-            <p>Memimpin kampanye edukasi lingkungan dan mengorganisasi aksi bersih-bersih di berbagai lokasi. Menginisiasi program awareness tentang pengurangan penggunaan plastik di komunitas.</p>
-          </div>
-        </div>
-
-        <div class="card org-item">
-          <img src="./img/oragnization/novoclub/WhatsApp Image 2025-07-04 at 14.34.23_1a9c2079.jpg  " alt="Novo Club Activity">
-          <div>
-            <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Member Novo Club</h3>
-            <p style="color: var(--secondary); margin-bottom: 1rem;">Technology Community</p>
-            <p>Aktif berpartisipasi dalam diskusi teknologi dan pengembangan diri. Membantu mengorganisasi event komunitas digital dan workshop pengembangan skill.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer id="contact">
-    <h2 style="margin-bottom: 1rem;">Let's Connect!</h2>
-    <p>Ready to create something amazing together?</p>
-    <div class="contact-links">
-      <a href="mailto:damarwahyup160@gmail.com" class="contact-link">
-        <i class="fas fa-envelope"></i>
-        damarwahyup160@gmail.com
-      </a>
-      <a href="https://linkedin.com/in/damarwahyuputra" class="contact-link" target="_blank">
-        <i class="fab fa-linkedin"></i>
-        LinkedIn
-      </a>
-      <a href="https://instagram.com/d.ptra._" class="contact-link" target="_blank">
-        <i class="fab fa-instagram"></i>
-        @d.ptra._
-      </a>
-    </div>
-    <p style="margin-top: 2rem; color: var(--text-muted-light);">
-      © 2025 Damar Wahyu Putra. Made with ❤️ and lots of ☕
-    </p>
-  </footer>
-
-  <!-- Modal -->
-  <div id="imageModal" class="modal">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modalImage">
-  </div>
-
-  <script>
-    // Mobile Navigation Toggle
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on nav links
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
       });
-    });
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-      }
-    });
-
-    // Theme Toggle
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = themeToggle.querySelector('i');
-
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    if (currentTheme === 'dark') {
-      document.body.classList.add('dark');
-      themeIcon.className = 'fas fa-sun';
-    }
-
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      
-      if (document.body.classList.contains('dark')) {
-        themeIcon.className = 'fas fa-sun';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        themeIcon.className = 'fas fa-moon';
-        localStorage.setItem('theme', 'light');
-      }
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
+      // Close mobile menu when clicking on nav links
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
       });
-    });
 
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    // Observe all elements with fade-in class
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Modal functionality
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const closeBtn = document.querySelector('.modal-close');
-
-    function openModal(src) {
-      modal.style.display = 'block';
-      modalImg.src = src;
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modal.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-
-    closeBtn.addEventListener('click', closeModal);
-
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    // Close modal with escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal.style.display === 'block') {
-        closeModal();
-      }
-    });
-
-    // Active navigation link highlighting
-    window.addEventListener('scroll', () => {
-      let current = '';
-      const sections = document.querySelectorAll('section[id]');
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - 200)) {
-          current = section.getAttribute('id');
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
         }
       });
 
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
+      // Theme Toggle
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = themeToggle.querySelector("i");
+
+      // Check for saved theme preference or default to light mode
+      const currentTheme = localStorage.getItem("theme") || "light";
+      if (currentTheme === "dark") {
+        document.body.classList.add("dark");
+        themeIcon.className = "fas fa-sun";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+          themeIcon.className = "fas fa-sun";
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.className = "fas fa-moon";
+          localStorage.setItem("theme", "light");
         }
       });
-    });
 
-    // Parallax effect for hero section
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const parallax = document.querySelector('.hero');
-      const speed = scrolled * 0.5;
-      
-      if (parallax) {
-        parallax.style.transform = `translateY(${speed}px)`;
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Intersection Observer for fade-in animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all elements with fade-in class
+      document.querySelectorAll(".fade-in").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Modal functionality
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const closeBtn = document.querySelector(".modal-close");
+
+      function openModal(src) {
+        modal.style.display = "block";
+        modalImg.src = src;
+        document.body.style.overflow = "hidden";
       }
-    });
 
-    // Loading animation
-    window.addEventListener('load', () => {
-      document.body.classList.add('loaded');
-    });
+      function closeModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
 
-    // Add CSS for active nav link
-    const style = document.createElement('style');
-    style.textContent = `
+      closeBtn.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Close modal with escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.style.display === "block") {
+          closeModal();
+        }
+      });
+
+      // Active navigation link highlighting
+      window.addEventListener("scroll", () => {
+        let current = "";
+        const sections = document.querySelectorAll("section[id]");
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Parallax effect for hero section
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelector(".hero");
+        const speed = scrolled * 0.5;
+
+        if (parallax) {
+          parallax.style.transform = `translateY(${speed}px)`;
+        }
+      });
+
+      // Loading animation
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+
+      // Add CSS for active nav link
+      const style = document.createElement("style");
+      style.textContent = `
       .nav-link.active {
         color: var(--primary) !important;
       }
@@ -501,44 +722,45 @@
       .skill-item:nth-child(3) { --i: 3; }
       .skill-item:nth-child(4) { --i: 4; }
     `;
-    document.head.appendChild(style);
+      document.head.appendChild(style);
 
-    // Add stagger animation to elements
-    const addStaggerAnimation = (selector, delay = 100) => {
-      document.querySelectorAll(selector).forEach((el, index) => {
-        el.style.animationDelay = `${index * delay}ms`;
-      });
-    };
+      // Add stagger animation to elements
+      const addStaggerAnimation = (selector, delay = 100) => {
+        document.querySelectorAll(selector).forEach((el, index) => {
+          el.style.animationDelay = `${index * delay}ms`;
+        });
+      };
 
-    // Apply stagger animations
-    addStaggerAnimation('.skill-item', 150);
-    addStaggerAnimation('.project-card', 200);
-    addStaggerAnimation('.org-item', 200);
+      // Apply stagger animations
+      addStaggerAnimation(".skill-item", 150);
+      addStaggerAnimation(".project-card", 200);
+      addStaggerAnimation(".org-item", 200);
 
-    // Add scroll progress indicator
-    const scrollProgress = document.createElement('div');
-    scrollProgress.style.cssText = `
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 3px;
-      background: var(--gradient);
-      z-index: 9999;
-      transition: width 0.1s ease;
+      // Add scroll progress indicator
+      const scrollProgress = document.createElement("div");
+        scrollProgress.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 3px;
+          background: var(--gradient);
+          z-index: 9999;
+          transition: width 0.1s ease;
     `;
-    document.body.appendChild(scrollProgress);
+      document.body.appendChild(scrollProgress);
 
-    window.addEventListener('scroll', () => {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (window.pageYOffset / totalHeight) * 100;
-      scrollProgress.style.width = progress + '%';
-    });
+      window.addEventListener("scroll", () => {
+        const totalHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (window.pageYOffset / totalHeight) * 100;
+        scrollProgress.style.width = progress + "%";
+      });
 
-    // Add floating particles background
-    const createParticles = () => {
-      const particlesContainer = document.createElement('div');
-      particlesContainer.style.cssText = `
+      // Add floating particles background
+      const createParticles = () => {
+        const particlesContainer = document.createElement("div");
+        particlesContainer.style.cssText = `
         position: fixed;
         top: 0;
         left: 0;
@@ -548,10 +770,10 @@
         z-index: -1;
         overflow: hidden;
       `;
-      
-      for (let i = 0; i < 20; i++) {
-        const particle = document.createElement('div');
-        particle.style.cssText = `
+
+        for (let i = 0; i < 20; i++) {
+          const particle = document.createElement("div");
+          particle.style.cssText = `
           position: absolute;
           width: 4px;
           height: 4px;
@@ -562,15 +784,15 @@
           top: ${Math.random() * 100}%;
           animation: floatParticle ${5 + Math.random() * 10}s linear infinite;
         `;
-        particlesContainer.appendChild(particle);
-      }
-      
-      document.body.appendChild(particlesContainer);
-    };
+          particlesContainer.appendChild(particle);
+        }
 
-    // Add particle animation CSS
-    const particleStyle = document.createElement('style');
-    particleStyle.textContent = `
+        document.body.appendChild(particlesContainer);
+      };
+
+      // Add particle animation CSS
+      const particleStyle = document.createElement("style");
+      particleStyle.textContent = `
       @keyframes floatParticle {
         0% {
           transform: translateY(0px) rotate(0deg);
@@ -588,8 +810,183 @@
         }
       }
     `;
-    document.head.appendChild(particleStyle);
-    
-  </script>
-</body>
+      let currentIndex = 0;
+      const projectsGrid = document.getElementById("projectsGrid");
+      const projects = projectsGrid.querySelectorAll(".card-inline");
+      const totalProjects = projects.length;
+      const maxVisibleDots = 5;
+
+      function updateCarousel() {
+        const offset = -currentIndex * 100;
+        projectsGrid.style.transform = `translateX(${offset}%)`;
+        updatePagination();
+        updateButtons();
+      }
+
+      function updatePagination() {
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = "";
+
+        if (totalProjects <= maxVisibleDots) {
+          // Tampilkan semua dot jika total project <= 5
+          for (let i = 0; i < totalProjects; i++) {
+            const dot = createDot(i);
+            pagination.appendChild(dot);
+          }
+        } else {
+          // Logika untuk lebih dari 5 project
+          let startIndex, endIndex;
+
+          if (currentIndex < 3) {
+            // Tampilkan 1-5
+            startIndex = 0;
+            endIndex = maxVisibleDots - 1;
+          } else if (currentIndex >= totalProjects - 3) {
+            // Tampilkan 5 terakhir
+            startIndex = totalProjects - maxVisibleDots;
+            endIndex = totalProjects - 1;
+          } else {
+            // Tampilkan range dengan current di tengah
+            startIndex = currentIndex - 2;
+            endIndex = currentIndex + 2;
+          }
+
+          // Tambahkan separator di awal jika perlu
+          if (startIndex > 0) {
+            const firstDot = createDot(0);
+            pagination.appendChild(firstDot);
+
+            const separator = document.createElement("span");
+            separator.className = "pagination-separator";
+            separator.textContent = "...";
+            pagination.appendChild(separator);
+          }
+
+          // Tampilkan range dot
+          for (let i = startIndex; i <= endIndex; i++) {
+            const dot = createDot(i);
+            pagination.appendChild(dot);
+          }
+
+          // Tambahkan separator di akhir jika perlu
+          if (endIndex < totalProjects - 1) {
+            const separator = document.createElement("span");
+            separator.className = "pagination-separator";
+            separator.textContent = "...";
+            pagination.appendChild(separator);
+
+            const lastDot = createDot(totalProjects - 1);
+            pagination.appendChild(lastDot);
+          }
+        }
+      }
+
+      function createDot(index) {
+        const dot = document.createElement("div");
+        dot.className = "pagination-dot";
+        if (index === currentIndex) {
+          dot.classList.add("active");
+        }
+        dot.onclick = () => goToProject(index);
+        return dot;
+      }
+
+      function updateButtons() {
+        document.getElementById("prevBtn").disabled = currentIndex === 0;
+        document.getElementById("nextBtn").disabled =
+          currentIndex === totalProjects - 1;
+      }
+
+      function nextProject() {
+        if (currentIndex < totalProjects - 1) {
+          currentIndex++;
+          updateCarousel();
+        }
+      }
+
+      function prevProject() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      }
+
+      function goToProject(index) {
+        currentIndex = index;
+        updateCarousel();
+      }
+
+      function openModal(src) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modalImg");
+        modal.classList.add("active");
+        modalImg.src = src;
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.remove("active");
+      }
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") prevProject();
+        if (e.key === "ArrowRight") nextProject();
+        if (e.key === "Escape") closeModal();
+      });
+
+      // Touch swipe support
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      projectsGrid.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      projectsGrid.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        if (touchEndX < touchStartX - 50) nextProject();
+        if (touchEndX > touchStartX + 50) prevProject();
+      }
+
+      // Initialize
+      updateCarousel();
+
+      const lb = document.getElementById("lightbox");
+      const lbImg = lb.querySelector("img");
+      const closeBTN = lb.querySelector(".close");
+
+      function openLB(src, alt = "") {
+        lbImg.src = src;
+        lbImg.alt = alt;
+        lb.classList.add("open");
+        document.body.style.overflow = "hidden"; // cegah scroll belakang
+      }
+      function closeLB() {
+        lb.classList.remove("open");
+        lbImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      document
+        .querySelectorAll(".project-image img, .project-gallery img")
+        .forEach((img) =>
+          img.addEventListener("click", () => openLB(img.src, img.alt || ""))
+        );
+
+      closeBTN.addEventListener("click", closeLB);
+      lb.addEventListener("click", (e) => {
+        if (e.target === lb) closeLB();
+          
+      });
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLB();
+      });
+
+      document.head.appendChild(particleStyle);
+    </script>
+  </body>
 </html>
