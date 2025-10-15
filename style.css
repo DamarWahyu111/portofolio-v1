@@ -648,10 +648,17 @@ body.dark .skill-item {
   transform: translateY(-2px);
 }
 
+.skill-item > div:last-child {
+  min-width: 0;              
+  overflow-wrap: anywhere;   
+  word-break: break-word;
+}
+
 .skill-icon {
   width: 40px;
   height: 40px;
   background: var(--gradient);
+  flex: 0 0 40px;           
   border-radius: 50%;
   display: flex;
   align-items: center;
